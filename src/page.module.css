@@ -1,3 +1,5 @@
+/* Home Page Header CSS */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -49,7 +51,7 @@
     border: 1px solid #37ba83;
 }
 
-/* Home Page header CSS */
+/* Home Page Featured Artists CSS */
 
 .subtitle {
     font-size: 4rem;
@@ -94,4 +96,25 @@
     justify-content: space-between;
     margin-top: 90px;
     flex-wrap: wrap;
+}
+
+/* Artists Page CSS */
+
+.hero {
+    width: 120vw;
+    height: 500px;
+    transform: translateX(calc((-120vw + 1080px) / 2));
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        transform: translateX(-5%);
+    }    
 }
